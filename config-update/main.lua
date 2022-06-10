@@ -28,17 +28,15 @@ function main()
     -- lock the whole project
     project.lock()
 
-    print(config.read("mode"))
-
-    local options = localcache.get("config", "options")
-    --options["kind"] = 
+    local options = localcache.get("config", "options") or {}
 
     for name, value in pairs(option.options()) do
         if _option_filter(name) then
-            options = options or {}
             options[name] = value
         end
     end
+
+    print("New options values", options)
 
     options["clean"] = true
 
