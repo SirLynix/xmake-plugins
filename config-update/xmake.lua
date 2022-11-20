@@ -156,6 +156,8 @@ task("config-update")
                 -- description
             ,   description = "Incremental config update."
 
+            ,   shortname = "cu",
+
                 -- options
             ,   options = {
                     {category = "."},
