@@ -156,7 +156,7 @@ task("config-update")
                 -- description
             ,   description = "Incremental config update."
 
-            ,   shortname = "cu",
+            ,   shortname = "cu"
 
                 -- options
             ,   options = {
