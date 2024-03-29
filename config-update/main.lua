@@ -38,7 +38,7 @@ function main()
 
     print("New options values", options)
 
-    options["clean"] = true
+    options["check"] = true
 
     task.run("config", options)
 
